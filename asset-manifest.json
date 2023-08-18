@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AlgorithmShowcase/static/css/main.be5881b5.css",
-    "main.js": "/AlgorithmShowcase/static/js/main.1e848d40.js",
+    "main.js": "/AlgorithmShowcase/static/js/main.d8053641.js",
     "static/media/Planeteer-Reaction.MP3": "/AlgorithmShowcase/static/media/Planeteer-Reaction.0605199c7b4696c88d4b.MP3",
     "static/media/Goodnightmare.mp3": "/AlgorithmShowcase/static/media/Goodnightmare.47cc305be7c5b1386e12.mp3",
     "static/media/jazz.mp3": "/AlgorithmShowcase/static/media/jazz.c58a86eef3daba082c0b.mp3",
@@ -18,10 +18,10 @@
     "static/media/computer.gif": "/AlgorithmShowcase/static/media/computer.82125c367200e0ef16cb.gif",
     "index.html": "/AlgorithmShowcase/index.html",
     "main.be5881b5.css.map": "/AlgorithmShowcase/static/css/main.be5881b5.css.map",
-    "main.1e848d40.js.map": "/AlgorithmShowcase/static/js/main.1e848d40.js.map"
+    "main.d8053641.js.map": "/AlgorithmShowcase/static/js/main.d8053641.js.map"
   },
   "entrypoints": [
     "static/css/main.be5881b5.css",
-    "static/js/main.1e848d40.js"
+    "static/js/main.d8053641.js"
   ]
 }
