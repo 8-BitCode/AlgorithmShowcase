@@ -1,0 +1,61 @@
+div.rightSE button {
+    font-size: 40px;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    animation: color-changeS 1s infinite; 
+  }
+.bar{
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: height 1s ;
+}
+.greenTarget {
+    color: rgb(8, 168, 8);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.dropped{
+    height:0%;
+    color:red
+}
+.cl{
+    margin-bottom: 40px;
+    padding: 10px;
+    font-size: 15px;
+}
+.titleBarSE{
+    display: flex;
+    justify-content: space-between; /* Distribute elements at both ends */
+    align-items: center; /* Align elements vertically at the center */
+    background: navy;
+    background: linear-gradient(to right, navy 0, #1084d0 100%);
+    color: #fff;
+    font-size: 16px;
+    font-family: RS;
+    padding: 0.33em 1em;
+    border-bottom: 2px solid #000;
+    width:896px;
+    position: sticky;
+  top: 0;
+  z-index: 1;
+}
+@media only screen and (max-device-width: 480px){
+    .algo{
+        font-size: 10px;
+    }
+    .bar{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    div.rightSE button{
+        font-size:30px;
+    }
+    .titleBarSE {
+        position: sticky;
+        width: 100%; /* Full width for mobile */
+        font-size:4.5px;
+        
+      }
+
+}

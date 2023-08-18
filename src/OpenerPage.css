@@ -1,0 +1,197 @@
+@font-face {
+  font-family: Rs; /* Replace with the desired font name */
+  src: url('./assets/earthbound-beginnings.ttf')
+}
+@keyframes color-change {
+0% { color: red; }
+50% { color: blue; }
+100% { color: red; }
+}
+@keyframes shake {
+0% { transform: translate(1px, 1px) rotate(0deg); }
+10% { transform: translate(-1px, -2px) rotate(-1deg); }
+20% { transform: translate(-3px, 0px) rotate(1deg); }
+30% { transform: translate(3px, 2px) rotate(0deg); }
+40% { transform: translate(1px, -1px) rotate(1deg); }
+50% { transform: translate(-1px, 2px) rotate(-1deg); }
+60% { transform: translate(-3px, 1px) rotate(0deg); }
+70% { transform: translate(3px, 1px) rotate(-1deg); }
+80% { transform: translate(-1px, -1px) rotate(1deg); }
+90% { transform: translate(1px, 2px) rotate(0deg); }
+100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@keyframes marquee {
+0%   { transform: translate(0, 0); }
+100% { transform: translate(-100%, 0); }
+}
+
+html{
+  cursor: url('./assets/arrow_l.png'), auto;
+height: 100%;
+width: 100%;
+}
+button{
+box-shadow: -1px 0 #000,0 -1px #000,-1px -1px #000,1px 0 #000,0 1px #000,1px 1px #000,1px -1px #000,-1px 2px #000,2px -1px #000,2px 2px #000;
+  cursor: url('./assets/aero_link_xpxl.png'), auto;
+  background-color: silver;
+  font-family: RS;
+}
+
+
+.container {
+background-color: rgb(251, 251, 251);
+margin: auto;
+margin-top: 2%;
+width: 900px;
+border: 3px solid green;
+position: relative; /* Set the container to relative positioning */
+}
+
+.titleBar {
+display: flex;
+justify-content: space-between; /* Distribute elements at both ends */
+align-items: center; /* Align elements vertically at the center */
+background: navy;
+background: linear-gradient(to right, navy 0, #1084d0 100%);
+color: #fff;
+font-size: 16px;
+font-family: RS;
+position: fixed;
+padding: 0.33em 1em;
+border-bottom: 2px solid #000;
+width:896px;
+}
+
+.bc {
+display: flex;
+align-items: center; /* Align buttons vertically at the center */
+}
+
+.welcome-text {
+font-size: 8em;
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 50px;
+}
+
+.image-container {
+display: flex;
+justify-content: center;
+/* Add some space between the image and the buttons */
+}
+
+.image {
+max-width: 47em;
+animation: shake 0.5s;
+
+/* When the animation is finished, start again */
+animation-iteration-count: infinite; 
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+}
+
+.marquee {
+overflow: hidden;
+
+}
+
+.marquee-content {
+display: flex;
+animation: scrolling 20s linear infinite;
+}
+
+.marquee-item {
+flex: 0 0 16vw;
+/*   flex: 0 0 20vw; */
+/*   margin: 0 2vw; */
+}
+
+.marquee-item img {
+display: block;
+width: 200px;
+height:300px;
+/*   padding: 0 20px; */
+}
+
+@keyframes scrolling {
+0% { transform: translateX(0); }
+100% { transform: translatex(-144vw); }
+}
+
+
+.buttons-container {
+  display: flex;
+  justify-content: center;/* Adjust this value if you want the buttons to be centered vertically differently */
+  position: relative;
+  
+}
+
+.big-button {
+  padding: 3% 3%;
+  font-size: 24px;
+  margin: 4%;
+  animation: color-change 1s infinite;
+
+}
+
+@media only screen and (max-device-width: 480px) {
+.container {
+  background-color: rgb(251, 251, 251);
+  margin: auto;
+  margin-top: 40%;
+  width: 300px;
+  border: 3px solid green;
+  position: relative; 
+  height:325px;
+}
+.titleBar {
+  display: flex;
+  justify-content: space-between; /* Distribute elements at both ends */
+  align-items: center; /* Align elements vertically at the center */
+  background: navy;
+  background: linear-gradient(to right, navy 0, #1084d0 100%);
+  color: #fff;
+  font-size: 10px;
+  font-family: RS;
+  position: fixed;
+  padding: 0.33em 1em;
+  border-bottom: 2px solid #000;
+  width:296px
+}
+.bc {
+  display: flex;
+  align-items: center; /* Align buttons vertically at the center */
+}
+.welcome-text{
+  font-size: 35px;
+}
+.image {
+  max-width: 15em;
+  animation: shake 0.5s;
+
+/* When the animation is finished, start again */
+animation-iteration-count: infinite; 
+}
+.marquee-item img {
+  display: block;
+  width: 50px;
+  height:100px;
+/*   padding: 0 20px; */
+}
+.big-button {
+  padding: 1% 1%;
+  font-size: 10px;
+  margin: 2%;
+  animation: color-change 1s infinite;
+}
+
+
+}
