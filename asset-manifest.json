@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/AlgorithmShowcase/static/css/main.be5881b5.css",
+    "main.js": "/AlgorithmShowcase/static/js/main.359ae1e7.js",
+    "static/media/Planeteer-Reaction.MP3": "/AlgorithmShowcase/static/media/Planeteer-Reaction.0605199c7b4696c88d4b.MP3",
+    "static/media/Goodnightmare.mp3": "/AlgorithmShowcase/static/media/Goodnightmare.47cc305be7c5b1386e12.mp3",
+    "static/media/jazz.mp3": "/AlgorithmShowcase/static/media/jazz.c58a86eef3daba082c0b.mp3",
+    "static/media/rubix.gif": "/AlgorithmShowcase/static/media/rubix.4efcbe8764b50b64ebee.gif",
+    "static/media/Chiptune.mp3": "/AlgorithmShowcase/static/media/Chiptune.7ca60d83e846512709f0.mp3",
+    "static/media/dancing-baby.gif": "/AlgorithmShowcase/static/media/dancing-baby.d8d82c9b97abf2985d81.gif",
+    "static/media/cooltext440150621142019.gif": "/AlgorithmShowcase/static/media/cooltext440150621142019.2656de12b3413bf060dc.gif",
+    "static/media/skull.gif": "/AlgorithmShowcase/static/media/skull.45e40e7bcd964a461927.gif",
+    "static/media/math.gif": "/AlgorithmShowcase/static/media/math.52b732fac2e89238c7cf.gif",
+    "static/media/earthbound-beginnings.ttf": "/AlgorithmShowcase/static/media/earthbound-beginnings.5bf2729e337b5c5a1942.ttf",
+    "static/media/fire.gif": "/AlgorithmShowcase/static/media/fire.53444b062748a7195b16.gif",
+    "static/media/ani.businessman2.gif": "/AlgorithmShowcase/static/media/ani.businessman2.2ab5e7f8dad0f52e1807.gif",
+    "static/media/at.gif": "/AlgorithmShowcase/static/media/at.ac7aaf4e9c8a6629bc60.gif",
+    "static/media/computer.gif": "/AlgorithmShowcase/static/media/computer.82125c367200e0ef16cb.gif",
+    "index.html": "/AlgorithmShowcase/index.html",
+    "main.be5881b5.css.map": "/AlgorithmShowcase/static/css/main.be5881b5.css.map",
+    "main.359ae1e7.js.map": "/AlgorithmShowcase/static/js/main.359ae1e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be5881b5.css",
+    "static/js/main.359ae1e7.js"
+  ]
+}
