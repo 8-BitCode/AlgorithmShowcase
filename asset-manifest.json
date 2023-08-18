@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AlgorithmShowcase/static/css/main.be5881b5.css",
+    "main.css": "/AlgorithmShowcase/static/css/main.0bfd4ea3.css",
     "main.js": "/AlgorithmShowcase/static/js/main.068658de.js",
     "static/media/Planeteer-Reaction.MP3": "/AlgorithmShowcase/static/media/Planeteer-Reaction.0605199c7b4696c88d4b.MP3",
     "static/media/Goodnightmare.mp3": "/AlgorithmShowcase/static/media/Goodnightmare.47cc305be7c5b1386e12.mp3",
@@ -17,11 +17,11 @@
     "static/media/at.gif": "/AlgorithmShowcase/static/media/at.ac7aaf4e9c8a6629bc60.gif",
     "static/media/computer.gif": "/AlgorithmShowcase/static/media/computer.82125c367200e0ef16cb.gif",
     "index.html": "/AlgorithmShowcase/index.html",
-    "main.be5881b5.css.map": "/AlgorithmShowcase/static/css/main.be5881b5.css.map",
+    "main.0bfd4ea3.css.map": "/AlgorithmShowcase/static/css/main.0bfd4ea3.css.map",
     "main.068658de.js.map": "/AlgorithmShowcase/static/js/main.068658de.js.map"
   },
   "entrypoints": [
-    "static/css/main.be5881b5.css",
+    "static/css/main.0bfd4ea3.css",
     "static/js/main.068658de.js"
   ]
 }
