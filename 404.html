@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your App</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    const url = new URL(window.location.href);
+    const path = url.pathname.substr(1);
+    const root = document.getElementById("root");
+
+    // Load the "index.html" for the requested path
+    fetch(`/${path || "index.html"}`)
+      .then(response => response.text())
+      .then(html => {
+        root.innerHTML = html;
+      })
+      .catch(error => {
+        console.error("Error fetching HTML:", error);
+        root.innerHTML = "An error occurred while loading the page.";
+      });
+  </script>
+</body>
+</html>
