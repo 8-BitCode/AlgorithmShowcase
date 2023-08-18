@@ -58,12 +58,10 @@ export const Dijkstra = (edges, source, target) => {
   
     {
       let u = target,
-        S = [u],
-        len = 0;
+        S = [u]
   
       while (prev[u] !== undefined) {
         S.unshift(prev[u]);
-        len += adj[u][prev[u]];
         u = prev[u];
       }
       return [S, Array.from(checkedCells)]; // Return the array of checked cells

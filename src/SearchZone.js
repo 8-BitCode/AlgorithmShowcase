@@ -36,6 +36,7 @@ export const SearchZone = () => {
   };
 
   const [array, setArray] = useState([]);
+  // eslint-disable-next-line no-unused-vars
   const [searching, setSearching] = useState(false);
   const [searchIndex, setSearchIndex] = useState(-1);
   const [target, setTarget] = useState(0);
