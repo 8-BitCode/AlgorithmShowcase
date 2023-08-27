@@ -6,7 +6,7 @@ import PathZone from './PathZone';
 import SearchZone from './SearchZone'
 const App = () => {
   return (
-      <Router basename="/AlgorithmShowcase">
+      <Router>
         <Routes>
           <Route path="/" element={<OpenerPage />} />
           <Route path="/SortZone" element={<SortZone />} />
