@@ -4,7 +4,8 @@
 
 .raP{
     margin-top: 8%;
-    margin-bottom: 8%
+    margin-bottom: 8%;
+    background-color: gold;
 }
 .grid-cell {
     width: 30.3px;
