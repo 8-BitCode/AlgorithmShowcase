@@ -143,6 +143,7 @@ body *::-webkit-scrollbar {
 .ra{
   margin-bottom: 30px;
   padding: 2%;
+  background-color: gold;
 }
 select:focus {
   background-color: navy;
