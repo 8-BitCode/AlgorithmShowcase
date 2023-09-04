@@ -46,6 +46,12 @@ margin-top: 2%;
 width: 900px;
 border: 3px solid green;
 position: relative; /* Set the container to relative positioning */
+background-image: url('https://im3.ezgif.com/tmp/ezgif-3-ca434129cb.gif'); /* URL to your grainy GIF */
+top: 0;
+left: 0;
+opacity: 0.1; /* Adjust opacity to control the intensity of the effect */
+pointer-events: none; /* Allow interactions with the content beneath */
+z-index: -1;
 
 }
 
