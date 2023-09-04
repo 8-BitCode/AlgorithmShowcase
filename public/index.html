@@ -14,7 +14,18 @@
       color: inherit;
       cursor: text;
     }
-    body::before {
+     body {
+            margin: 0;
+            padding: 0;
+            background-image: url('./background.png'); /* Set background image of the body */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            image-rendering: pixelated;
+            overflow: hidden; /* Hide any content overflowing the body */
+        }
+
+        body::before {
             content: "";
             background-image: url('https://im3.ezgif.com/tmp/ezgif-3-ca434129cb.gif'); /* URL to your grainy GIF */
             position: fixed;
