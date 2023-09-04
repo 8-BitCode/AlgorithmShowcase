@@ -57,7 +57,7 @@ position: relative; /* Set the container to relative positioning */
     height: 100%;
     opacity: 0.1; /* Adjust opacity to control the intensity of the effect */
     pointer-events: none; /* Allow interactions with the content beneath */
-    z-index: -1;
+    z-index: 9999;
 }
 
 .titleBar {
