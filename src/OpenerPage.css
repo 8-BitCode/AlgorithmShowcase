@@ -147,7 +147,7 @@ height:300px;
 }
 @media only screen and (max-device-height: 920px){
   .container{
-    zoom: 0.8;
+    zoom: 0.67
   }
 }
 
