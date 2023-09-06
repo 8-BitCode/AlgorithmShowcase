@@ -73,7 +73,7 @@ body *::-webkit-scrollbar-track {
     background: navy;
     background: linear-gradient(to right, navy 0, #1084d0 100%);
     color: #fff;
-    font-size: 16px;
+    font-size: 19px;
     font-family: RS;
     padding: 0.33em 1em;
     border-bottom: 2px solid #000;
