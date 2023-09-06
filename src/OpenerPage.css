@@ -145,7 +145,7 @@ height:300px;
   animation: color-change 1s infinite;
 
 }
-@media only screen and (max-device-height: 480px){
+@media only screen and (max-device-height: 920px){
   zoom: 0.8;
 }
 
