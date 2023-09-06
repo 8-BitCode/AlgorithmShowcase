@@ -263,10 +263,10 @@ input[type='range']::-moz-range-thumb {
   margin-bottom: 1vh;
 }
 .x{
-  font-size:10px
+  font-size:15px
 }
 .m{
-  font-size:10px
+  font-size:15px
 }
 @media only screen and (max-device-height: 920px) and (min-width: 480px){
   .containerS{
