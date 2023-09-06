@@ -43,11 +43,10 @@ box-shadow: -1px 0 #000,0 -1px #000,-1px -1px #000,1px 0 #000,0 1px #000,1px 1px
 background-color: rgb(251, 251, 251);
 margin: auto;
 margin-top: 1%;
-width: 100%;
 border: 3px solid green;
 position: relative;
 box-sizing: border-box;
-max-width: 900px;
+width: 900px;
 /* Set the container to relative positioning */
 }
 
@@ -145,6 +144,9 @@ height:300px;
   margin: 4%;
   animation: color-change 1s infinite;
 
+}
+@media only screen and (max-width: 480px){
+  
 }
 
 @media only screen and (max-device-width: 480px) {
