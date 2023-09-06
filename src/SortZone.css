@@ -350,4 +350,10 @@ order:3
 .right {
   order: 1; /* Change the order for mobile */
 }
+  .x{
+  font-size:10px
+}
+.m{
+  font-size:10px
+}
 }
