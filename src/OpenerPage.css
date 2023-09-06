@@ -145,7 +145,7 @@ height:300px;
   animation: color-change 1s infinite;
 
 }
-@media only screen and (max-device-height: 920px){
+@media only screen and (max-device-height: 920px) and (min-width: 480px){
   .container{
     zoom: 0.67
   }
