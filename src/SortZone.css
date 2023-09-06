@@ -272,6 +272,12 @@ input[type='range']::-moz-range-thumb {
   .containerS{
     zoom: 0.67
   }
+  .x{
+  font-size:20px
+}
+.m{
+  font-size:20px
+}
 }
 
 @media only screen and (max-device-width: 480px) {
