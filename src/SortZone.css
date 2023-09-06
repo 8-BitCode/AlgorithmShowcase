@@ -351,11 +351,11 @@ order:3
   order: 1; /* Change the order for mobile */
 }
   .x{
-  font-size:12px
-  margin-top:1px
+  font-size:12px;
+  margin-top:1px;
 }
 .m{
-  font-size:12px
-  margin-bottom:1px
+  font-size:12px;
+  margin-bottom:1px;
 }
 }
