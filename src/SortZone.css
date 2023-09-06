@@ -262,9 +262,6 @@ input[type='range']::-moz-range-thumb {
 .array-bar{
   margin-bottom: 1vh;
 }
-div.bcP button{
-  font-size:10px
-}
 @media only screen and (max-device-height: 920px) and (min-width: 480px){
   .containerS{
     zoom: 0.67
