@@ -352,8 +352,10 @@ order:3
 }
   .x{
   font-size:12px
+  margin-top:1px
 }
 .m{
   font-size:12px
+  margin-bottom:1px
 }
 }
