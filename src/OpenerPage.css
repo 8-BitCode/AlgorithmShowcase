@@ -201,6 +201,9 @@ animation-iteration-count: infinite;
   margin: 2%;
   animation: color-change 1s infinite;
 }
-
+.bc{
+  margin-top:1px;
+  margin-bottom:1px;
+}
 
 }
