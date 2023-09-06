@@ -262,6 +262,12 @@ input[type='range']::-moz-range-thumb {
 .array-bar{
   margin-bottom: 1vh;
 }
+@media only screen and (max-device-height: 920px){
+  .containerS{
+    zoom: 0.67
+  }
+}
+
 @media only screen and (max-device-width: 480px) {
   
   .containerS {
