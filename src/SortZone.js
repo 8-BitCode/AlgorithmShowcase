@@ -190,7 +190,7 @@ export const SortZone = () => {
             
           </div>
 
-        <div className="right" style={{opacity:`${greyed}`}}>
+        <div className="rightSO" style={{opacity:`${greyed}`}}>
           <button onClick={sort} disabled={isSorting}>SORT!</button>
         </div>     
 
