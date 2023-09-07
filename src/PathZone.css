@@ -5,6 +5,11 @@
 .raP{
     margin-top: 8%;
     margin-bottom: 8%;
+    background-color: #f5b759;
+}
+.raPP{
+    margin-top: 8%;
+    margin-bottom: 8%;
 }
 .grid-cell {
     width: 30.3px;
