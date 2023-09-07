@@ -355,7 +355,7 @@ input[type='range']::-moz-range-thumb {
   font-size: 30px;
  }
   div.right button{
-  font-size: 30px;
+  font-size: 21px;
  }
  .left {
   order: 2; /* Change the order for mobile */
