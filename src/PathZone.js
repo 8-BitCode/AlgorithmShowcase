@@ -302,7 +302,7 @@ function sort(){
           <button className='raP' onClick={generateNewMaze} onTouchStart={generateNewMaze} disabled={isSorting}>Generate Maze</button>
 
 
-            <button className='raP' onClick={clearBoard} onTouchStart={clearBoard} disabled={isSorting}>Clear Board</button>
+            <button className='raPP' onClick={clearBoard} onTouchStart={clearBoard} disabled={isSorting}>Clear Board</button>
             
           </div>
 
