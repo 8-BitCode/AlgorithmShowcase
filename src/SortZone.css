@@ -181,7 +181,20 @@ font-family: RS;
   align-items: center;
   
 }
+.rightSO {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
 div.right button {
+  font-size: 40px;
+  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  animation: color-changeS 1s infinite; 
+}
+div.rightSO button {
   font-size: 40px;
   padding: 15px;
   padding-top: 20px;
