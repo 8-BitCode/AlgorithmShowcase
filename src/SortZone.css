@@ -338,7 +338,10 @@ input[type='range']::-moz-range-thumb {
     padding: 10px; /* Adjust padding for mobile */
     height: auto; /* Auto height for mobile */
   }
- div.right button{
+ div.rightSO button{
+  font-size: 30px;
+ }
+  div.right button{
   font-size: 30px;
  }
  .left {
