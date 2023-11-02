@@ -1,6 +1,8 @@
 @font-face {
-font-family: "Comic Sans MS", "Comic Sans", cursive;
+font-family: Rs; /* Replace with the desired font name */
+src: url('./assets/earthbound-beginnings.ttf')]
 }
+
 @keyframes color-change {
 0% { color: red; }
 50% { color: blue; }
