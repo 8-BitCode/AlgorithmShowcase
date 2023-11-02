@@ -72,12 +72,13 @@ align-items: center; /* Align buttons vertically at the center */
 }
 
 .welcome-text {
-font-size: 8em;
+font-size: 7em;
 margin-top: 20px;
 display: flex;
 flex-direction: column;
 align-items: center;
 margin-top: 50px;
+font-family: Comic Sans MS;
 }
 
 .image-container {
