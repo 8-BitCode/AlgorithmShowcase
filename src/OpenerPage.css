@@ -198,7 +198,7 @@ animation-iteration-count: infinite;
 }
 .big-button {
   padding: 1% 1%;
-  font-size: 15px;
+  font-size: 17px;
   margin: 2%;
   animation: color-change 1s infinite;
 }
