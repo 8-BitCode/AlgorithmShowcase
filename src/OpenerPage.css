@@ -143,7 +143,7 @@ height:300px;
   padding: 3% 3%;
   font-size: 24px;
   margin: 4%;
-  animation: color-change 1s infinite;
+  animation: color-change 1s linear infinite;
 
 }
 @media only screen and (max-device-height: 920px) and (min-width: 480px){
