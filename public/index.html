@@ -14,11 +14,57 @@
       color: inherit;
       cursor: text;
     }
+      body {
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    canvas {
+      image-rendering: pixelated;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   </style>
   </head>
   <body style="background-image: url(./background.png); image-rendering: pixelated; ">
     <script type="text/javascript" src="//counter.websiteout.net/js/2/6/60/0"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <canvas id="backgroundCanvas"></canvas>
     <div id="root"></div>
+    <script>
+    // Function to apply Floyd-Steinberg dithering algorithm
+    function applyDithering(ctx, imageData) {
+      // ... (same as before)
+    }
+
+    function distributeError(imageData, x, y, quantError) {
+      // ... (same as before)
+    }
+
+    // Get the canvas element and its 2d context
+    const backgroundCanvas = document.getElementById('backgroundCanvas');
+    const backgroundCtx = backgroundCanvas.getContext('2d');
+
+    // Set the canvas size to match the viewport
+    backgroundCanvas.width = window.innerWidth;
+    backgroundCanvas.height = window.innerHeight;
+
+    // Create an image element with the background image
+    const img = new Image();
+    img.src = './background.png';
+
+    // When the image is loaded, draw it on the background canvas and apply dithering
+    img.onload = function () {
+      backgroundCtx.drawImage(img, 0, 0, backgroundCanvas.width, backgroundCanvas.height);
+      const imageData = backgroundCtx.getImageData(0, 0, backgroundCanvas.width, backgroundCanvas.height);
+      applyDithering(backgroundCtx, imageData);
+      backgroundCtx.putImageData(imageData, 0, 0);
+    };
+  </script>
   </body>
 </html>
