@@ -14,13 +14,41 @@
       color: inherit;
       cursor: text;
     }
-    
+    canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
   </style>
   </head>
   <body style="background-image: url(./background.png); image-rendering: pixelated;">
     <script type="text/javascript" src="//counter.websiteout.net/js/2/6/60/0"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <div id="root"></div>
-    
+    <script>
+        // Add dither effect using JavaScript
+        const canvas = document.createElement('canvas');
+        document.body.appendChild(canvas);
+        const ctx = canvas.getContext('2d');
+
+        function drawDither() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+
+            for (let x = 0; x < width; x += 2) {
+                for (let y = 0; y < height; y += 2) {
+                    const randomValue = Math.random() * 255;
+                    ctx.fillStyle = `rgba(${randomValue},${randomValue},${randomValue},1)`;
+                    ctx.fillRect(x, y, 2, 2);
+                }
+            }
+        }
+
+        window.addEventListener('resize', drawDither);
+        drawDither();
+    </script>
   </body>
 </html>
