@@ -14,103 +14,12 @@
       color: inherit;
       cursor: text;
     }
-    canvas {
-      image-rendering: pixelated
-    }
-      body {
-      margin: 0;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-
-    canvas {
-      image-rendering: pixelated;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+    
   </style>
   </head>
   <body style="background-image: url(./background.png); image-rendering: pixelated; ">
     <script type="text/javascript" src="//counter.websiteout.net/js/2/6/60/0"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <div id="root"></div>
-    <canvas id="ditheredCanvas"></canvas>
-    <script>
-    // Function to apply Floyd-Steinberg dithering algorithm
-    function applyDithering(ctx, imageData) {
-      const width = imageData.width;
-      const height = imageData.height;
-
-      for (let y = 0; y < height; y++) {
-        for (let x = 0; x < width; x++) {
-          const index = (y * width + x) * 4;
-          const oldColor = imageData.data.slice(index, index + 4);
-          const newColor = oldColor.map(value => Math.round(value / 255) * 255);
-
-          imageData.data[index] = newColor[0];
-          imageData.data[index + 1] = newColor[1];
-          imageData.data[index + 2] = newColor[2];
-          imageData.data[index + 3] = newColor[3];
-
-          const quantError = oldColor.map((value, i) => oldColor[i] - newColor[i]);
-
-          // Distribute the error to neighboring pixels
-          distributeError(imageData, x, y, quantError);
-        }
-      }
-    }
-
-    function distributeError(imageData, x, y, quantError) {
-      const width = imageData.width;
-      const height = imageData.height;
-
-      const weights = [
-        [7 / 16, 1, 0],
-        [3 / 16, -1, 1],
-        [5 / 16, 0, 1],
-        [1 / 16, 1, 1]
-      ];
-
-      for (let i = 0; i < weights.length; i++) {
-        const xOffset = weights[i][1];
-        const yOffset = weights[i][2];
-
-        const neighborX = x + xOffset;
-        const neighborY = y + yOffset;
-
-        if (neighborX >= 0 && neighborX < width && neighborY >= 0 && neighborY < height) {
-          const neighborIndex = (neighborY * width + neighborX) * 4;
-
-          imageData.data[neighborIndex] += quantError[0] * weights[i][0];
-          imageData.data[neighborIndex + 1] += quantError[1] * weights[i][0];
-          imageData.data[neighborIndex + 2] += quantError[2] * weights[i][0];
-        }
-      }
-    }
-
-    // Get the canvas element and its 2d context
-    const canvas = document.getElementById('ditheredCanvas');
-    const ctx = canvas.getContext('2d');
-
-    // Set the canvas size to match the viewport
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    // Create an image element with the background image
-    const img = new Image();
-    img.src = './background.png';
-
-    // When the image is loaded, draw it on the canvas and apply dithering
-    img.onload = function () {
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-      applyDithering(ctx, imageData);
-      ctx.putImageData(imageData, 0, 0);
-    };
-  </script>
   </body>
 </html>
