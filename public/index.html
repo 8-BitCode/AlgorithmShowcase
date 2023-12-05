@@ -17,38 +17,9 @@
     
   </style>
   </head>
-  <body style="background-image: url(./background.png); image-rendering: pixelated;" class="dither" >
+  <body style="background-image: url(./background.png); image-rendering: pixelated;">
     <script type="text/javascript" src="//counter.websiteout.net/js/2/6/60/0"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <div id="root"></div>
-    <script>
-var palette1 = [
-[0,0,0],
-[85,255,85],
-[255,85,85],
-[255,255,85]
-];
-var palette2 = [
-[0,0,0],
-[85,255,255],
-[255,85,85],
-[255,255,255]
-];
-var palette3 = [
-[0,0,0],
-[255,0,255],
-[0,255,255],
-[255,255,255]
-];
-var coin = Math.random();
-var palette = coin < 0.3 ? palette1 : coin < 0.6 ? palette2 : palette3;
-var options = {
-    "step": 3,
-    "className": "dither",
-    "palette": palette,
-    "algorithm": "ordered"
-};
-dither = new DitherJS('.dither',options);
-</script>
   </body>
 </html>
